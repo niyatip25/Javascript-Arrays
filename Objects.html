@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script lang="javascript" type="text/javascript">
+      // Objects - To access data in objects we use properties.
+      var ourDog = {
+        name: "camper",
+        legs: 4,
+        tails: 1,
+        friends: ["Everything!"],
+      };
+      var ourDogTailsCount = ourDog.tails;
+      console.log("Our Dog Tails Count: ", ourDogTailsCount);
+
+      var myDog = {
+        name: "Quincy",
+        legs: 3,
+        tails: 2,
+        friends: [],
+        "food he eats": "eggs",
+        1: "wierdPorp1",
+        2: "wierdProp2",
+      };
+      console.log("food " + myDog.name + " eats: ", myDog["food he eats"]); // property name with space
+      console.log("My Dog " + myDog.name + " has " + myDog.tails + " tails."); // property name with number
+      console.log("This is so: ", myDog[1]);
+      myDog.bark = "bow-bow";
+      console.log("myDog barks like: ", myDog.bark);
+      console.log("I am the whole object: ", myDog);
+
+      //   Delete property
+      delete myDog.bark;
+      console.log("After deleting bark prop: ", myDog);
+    </script>
+  </head>
+  <body></body>
+</html>

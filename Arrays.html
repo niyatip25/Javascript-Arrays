@@ -5,11 +5,10 @@
       arrList = [23, 45, 67];
       arrListNew = ["banana", "mango", 45, arrList];
       console.log("Final Array List: ", arrListNew);
-
       console.log("Array List with its index:");
-
       for (var i = 0; i < arrListNew.length; i++) {
         console.log(i + " - " + arrListNew[i]);
+        console.log("type: ", typeof arrListNew[i]);
         if (i == 3) {
           console.log("subarry: ", arrListNew[i]);
           console.log("Extract Initial Array with its index from New Array:");
@@ -18,14 +17,6 @@
           }
         }
       }
-
-      // Array Concat
-      function func() {
-        var num1 = [[23]];
-        var num2 = [89, [67]];
-        document.write(num1.concat(num2));
-      }
-      func();
     </script>
   </head>
   <body></body>

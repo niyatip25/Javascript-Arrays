@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <script lang="javascript" type="text/javascript">
+      // find returns only first element that satisfies testing function.
+      let customers = [
+        {
+          name: "ABC Inc",
+          credit: 100,
+        },
+        {
+          name: "ACME Corp",
+          credit: 200,
+        },
+        {
+          name: "IoT AG",
+          credit: 300,
+        },
+      ];
+      console.log(
+        "Customer: ",
+        customers.find((c) => c.credit > 100)
+      );
+      console.log("--------------------------------------");
+
+      const evergreens = [
+        { name: "cedar", count: 2 },
+        { name: "fir", count: 6 },
+        { name: "pine", count: 3 },
+      ];
+
+      // suppose we need to skip the first element
+      const result = evergreens.find((tree, i) => {
+        if (tree.count > 1 && i !== 0) return true;
+      });
+      console.log("Tree: ", result);
+      console.log("--------------------------------------");
+
+      // find(callbackFn, thisArg)
+      var arr = ["tech", "on", "the", "net"];
+      var msg = "The element being tested is: ";
+      function contains_n_char(ele) {
+        console.log(this + ele);
+        return ele.indexOf("n") !== -1;
+      }
+      console.log(arr.find(contains_n_char, msg));
+    </script>
+  </head>
+  <body></body>
+</html>
