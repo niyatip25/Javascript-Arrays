@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script lang="javascript" type="text/javascript">
+      // push adds at end and returns the new length
+      // shift removes the first and returns that removed one.
+      function nextInLine(arr, item) {
+        arr.push(item); // adds at end
+        return arr.shift(); // removes from begin
+      }
+      var testArray = [1, 2, 3, 4, 5];
+      console.log("Before : ", JSON.stringify(testArray));
+      console.log("Removed : " + nextInLine(testArray, 6) + " and Added : 6");
+      console.log("After : ", JSON.stringify(testArray));
+    </script>
+  </head>
+  <body></body>
+</html>
